@@ -1,0 +1,294 @@
+@import url(//fonts.googleapis.com/earlyaccess/notokufiarabic.css); /* import kufi font */
+
+body,
+button {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+*{
+    padding:0;
+    margin: 0;
+    direction: rtl;
+}
+
+/* Start NavBar */
+nav{
+    width:100%;
+    height: 100px;
+    background-color:#2BB673;
+    display: flex;
+    color:rgba(237, 255, 252, 0.863);
+    align-items: center;
+}
+nav .icon-search{
+    margin:12px 28px 0 0 ;
+    width: 45%;
+}
+nav .icon-search a{
+    font-size: 40px;
+    color:rgba(237, 255, 252, 0.863);
+}
+nav.head-line{
+    width: 55%;   
+}
+nav .head-line h1{
+    padding-top:16px;
+    font-size: 35px;    
+}
+/* end NavBar */
+
+/* start Section */
+section{
+    width:100%;
+    height:auto;
+    background-color:#D6DFE6;
+    padding-bottom: 22px;
+}
+section .change-city{
+    background-color: #2BB673;
+    border:1px solid rgb(40, 165, 105);
+    border-radius: 9px;
+    cursor: pointer; 
+    width:90%;
+    margin :23px 58px 0 0;
+    color:#DDD;
+    padding:15px 0;
+    font-size: 50px;
+    outline: none;
+}
+section .container{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+section .container .one{
+    background-color:#fff;
+    width:30%;
+    height: 300px;
+    margin:21px 31px 0 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 8px rgba(56, 55, 55, 0.267),
+                -3px -3px 8px rgba(56, 55, 55, 0.267)   
+}
+section .container .one .photo{
+    width:100%;
+    height: 80%; 
+}
+section .container .one .photo img{
+    width:100%;
+    height:100%;
+}
+section .container .one .link{
+    width:100%;
+    height: 20%;
+
+}
+section .container .one .link a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.637);
+    font-size: 31px;
+    text-align: center;
+    display: block;
+    width:100%;
+}
+/* end Section */
+
+/* Start Footer */
+footer{
+    width:100%;
+    height: 80px;
+    background-color: #2BB673;
+    display: flex;
+}
+footer .btn{
+    width:33.33%;
+    height: 100%;
+    
+}
+footer .btn a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 38px;
+    text-align: center;
+    display: block;
+    padding:4px 0 3px 0;
+}
+footer .border-left{
+    border-left:1px solid #DDD;
+}
+footer .border-right{
+    border-right:1px solid #DDD;
+}
+/* end Footer */
+
+/* start media Max-width (768px)*/
+/* Start editing navbar  */
+@media (max-width:768px) {
+    nav{
+        height: 90px;
+    }
+    nav .icon-search{
+        width: 40%;
+        margin:18px 21px 0 0;
+        
+    }
+    nav.head-line{
+        width: 60%;        
+    }    
+    /* end editing navbar  */
+
+    /* start editing Section */
+    section .change-city{ 
+        width:85%;
+        margin :16px 57px 0 0;
+        padding:5px ;
+        font-size: 24px;
+    }
+    section .container .one{
+        width:31%;
+        height: 187px;
+        margin:10px 13px 0 0;
+        
+    }
+    section .container .one .link a{
+        font-size: 19px;
+        font-weight: bold;
+    }
+    /* end of editing Section */
+
+    /* Start Footer */
+    footer{
+        height: 71px;
+    }
+    footer .btn a{
+        font-size: 22px;
+        padding:14px 0 3px 0;
+    }
+}
+    /* end of editing Footer */
+    /* end of media (max-width:768px)*/    
+
+    /* start media Max width (414px)*/
+    /* Start editing navbar  */
+@media (max-width:414px) {
+    nav{
+        height: 80px;
+    }
+    nav .icon-search{
+        width: 35%;
+        margin:16px 14px 0 0;
+        
+    }
+    nav .icon-search a{
+        font-size: 35px;
+    }
+    nav.head-line{
+        width: 75%;        
+    }
+    nav .head-line h1{
+        font-size: 30px;    
+    }
+    /* end editing navbar  */
+
+    /* start editing Section */
+    section .change-city{ 
+        width:85%;
+        margin :16px 32px 0 0;
+        padding:5px ;
+        font-size: 20px;
+    }
+    section .container .one{
+        width:30%;
+        height: 145px;
+        margin:10px 10px 0 0;
+        
+    }
+    section .container .one .link a{
+        font-size: 11px;
+        font-weight: bold;
+        padding-top:4px;
+    }
+    /* end of editing Section */
+
+    /* Start Footer */
+    footer{
+        height: 49px;
+    }
+    footer .btn a{
+        font-size: 17px;
+        padding: 9px 0 3px 0;
+    }
+    footer .btn a img{
+        width: 26px;
+        height: 22px;
+        margin: 3px 0px -4px 0px;
+    }
+
+}
+    /* end of editing Footer */
+    /* end of media (max-width:414px)*/
+
+    /* start media Max width (360px)*/
+    /* Start editing navbar  */
+
+    @media (max-width:360px) {
+    nav{
+        height: 70px;
+    }
+    nav .icon-search{
+        width: 30%;
+        margin:16px 14px 0 0;
+        
+    }
+    nav .icon-search a{
+        font-size: 22px;
+    }
+    nav.head-line{
+        width: 60%;        
+    }
+    nav .head-line h1{
+        font-size: 30px;    
+    }
+        
+    /* end editing navbar  */
+
+    /* start editing Section */
+
+    section .change-city{ 
+        width:88%;
+        margin :15px 28px 0 0;
+        padding:5px ;
+        font-size: 20px;
+    }
+    section .container .one{
+        width:30%;
+        height: 127px;
+        margin:10px 9px 0 0;
+        
+    }
+    section .container .one .link a{
+        font-size: 9px;
+        font-weight: bold;
+        padding-top:4px;
+    }
+    /* end of editing Section */
+
+    /* Start Footer */
+    footer{
+        height: 49px;
+    }
+    footer .btn a{
+        font-size: 20px;
+        padding:5px 0 3px 0;
+    }    
+    footer .btn a img{
+        width: 26px;
+        height: 22px;
+        margin: 3px 0px -4px 0px;
+    }
+}
+    /* end of editing Footer */
+    /* end of media (max-width:360px)*/    
